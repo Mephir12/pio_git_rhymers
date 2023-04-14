@@ -2,9 +2,9 @@ package edu.kis.vh.nursery;
 
 public class defaultCountingOutRhymer {
 
-    public static final int SIZE = 12;
+    public static final int MAX_SIZE = 12;
     public static final int VALUE = -1;
-    private final int[] numbers = new int[SIZE];
+    private final int[] numbers = new int[MAX_SIZE];
 
     public int total = VALUE;
 
@@ -18,7 +18,7 @@ public class defaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == MAX_SIZE -1;
     }
 
     protected int peekaboo() {
